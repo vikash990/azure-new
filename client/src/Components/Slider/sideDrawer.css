@@ -1,0 +1,3 @@
+.side-drawer.open {
+    transform:translateX(0);
+}
