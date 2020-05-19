@@ -34,13 +34,20 @@ mongoose.connect(
 ).then(()=>console.log('MongoDb Connected')).catch(err=>console.log(err))
 
 console.log(process.env.NODE_ENV)
+app.use(express.static('./client/build'));
+app.get("*", (req, res) => {
+   res.sendFile(path.resolve(__dirname, "client", "build",     
+   "index.html"));
+});
 
-if (process.env.NODE_ENV === "production") {
+
+/*if (process.env.NODE_ENV === "production") {
     app.use(express.static("./client/build")); // change this if your dir structure is different
     app.get("*", (req, res) => {
       res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
     });
   }
+*/
  
 
 
