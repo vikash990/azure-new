@@ -22,11 +22,8 @@ app.use(
 
 console.log(process.env.port);
 
-/* const mongoURI='mongodb+srv://devikTech:9931320688v@cluster0-koncr.mongodb.net/test?retryWrites=true&w=majority';  */
 
 const mongoURI=process.env.mongoURI;
-
-console.log(mongoURI)
 
 
 mongoose.connect(
@@ -39,7 +36,7 @@ mongoose.connect(
 console.log(process.env.NODE_ENV)
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build")); // change this if your dir structure is different
+    app.use(express.static("./client/build")); // change this if your dir structure is different
     app.get("*", (req, res) => {
       res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
     });
