@@ -4,11 +4,9 @@
   "description": "love-life-love",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+       "start": "node server.js",
+    "azure": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm run start"
    
-  },
-  "engines": {
-    "node": "10.16.0"
   },
   "repository": {
     "type": "git",
