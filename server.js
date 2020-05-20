@@ -8,7 +8,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 
-var port=5000||process.env.PORT;
+app.set('port', process.env.PORT || 5000);
 
 const path = require("path");
 
@@ -54,6 +54,6 @@ app.get("*", (req, res) => {
 var routes = require('./routes/routes')
 app.use('/routes',routes)
 
-app.listen(port,function(){
-    console.log('server is running a port:'+port)
+app.listen(app.get('port'),function(){
+    console.log('server is running a port:'+app.get('port'))
 })
