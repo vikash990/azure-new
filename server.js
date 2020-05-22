@@ -35,6 +35,11 @@ mongoose.connect(
 
 console.log(process.env.NODE_ENV)
 app.use(express.static('./client/build'));
+
+
+var routes = require('./routes/routes')
+app.use('/routes',routes)
+
 app.get("*", (req, res) => {
    res.sendFile(path.resolve(__dirname, "client", "build",     
    "index.html"));
@@ -51,8 +56,7 @@ app.get("*", (req, res) => {
  
 
 
-var routes = require('./routes/routes')
-app.use('/routes',routes)
+module.exports = app;
 
 app.listen(app.get('port'),function(){
     console.log('server is running a port:'+app.get('port'))
