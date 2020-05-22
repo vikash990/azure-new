@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d13c399a.chunk.css",
+    "main.js": "/static/js/main.98402c95.chunk.js",
+    "main.js.map": "/static/js/main.98402c95.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0548e3b8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0548e3b8.js.map",
+    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
+    "static/js/2.658e1377.chunk.js": "/static/js/2.658e1377.chunk.js",
+    "static/js/2.658e1377.chunk.js.map": "/static/js/2.658e1377.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0218b3f017958b16addac8bb1308c8d2.js": "/precache-manifest.0218b3f017958b16addac8bb1308c8d2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
+    "static/css/main.d13c399a.chunk.css.map": "/static/css/main.d13c399a.chunk.css.map",
+    "static/js/2.658e1377.chunk.js.LICENSE.txt": "/static/js/2.658e1377.chunk.js.LICENSE.txt",
+    "static/media/angle_brackets.jpg": "/static/media/angle_brackets.176cc6c0.jpg",
+    "static/media/deviktech.png": "/static/media/deviktech.5fe1d31f.png",
+    "static/media/ds_algo_logo.png": "/static/media/ds_algo_logo.f77da8f1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0548e3b8.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.658e1377.chunk.js",
+    "static/css/main.d13c399a.chunk.css",
+    "static/js/main.98402c95.chunk.js"
+  ]
+}

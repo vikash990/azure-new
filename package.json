@@ -10,13 +10,7 @@
    
   },
 
-   "engines": {
-  "node": "10.0"
-},
-  "repository": {
-    "type": "git",
-    "url": "vikash990"
-  },
+  
   "author": "vikash dubey",
   "license": "ISC",
   "dependencies": {
